@@ -17,7 +17,10 @@ SplashScreen.preventAutoHideAsync();
 export default function RootLayout() {
   const colorScheme = useColorScheme();
   const [loaded] = useFonts({
-    SpaceMono: require("../assets/fonts/SpaceMono-Regular.ttf"),
+    RalewayBlack: require("../assets/fonts/Raleway-Black.ttf"),
+    RalewayBold: require("../assets/fonts/Raleway-Bold.ttf"),
+    RalewayRegular: require("../assets/fonts/Raleway-Regular.ttf"),
+    RalewaySemiBold: require("../assets/fonts/Raleway-SemiBold.ttf"),
   });
 
   useEffect(() => {
@@ -34,7 +37,7 @@ export default function RootLayout() {
     <ThemeProvider value={colorScheme === "dark" ? DarkTheme : DefaultTheme}>
       <Stack>
         {/* <Stack.Screen name="(tabs)" options={{ headerShown: false }} /> */}
-        <Stack.Screen name="index" />
+        <Stack.Screen name="index" options={{ headerShown: false }} />
       </Stack>
     </ThemeProvider>
   );
