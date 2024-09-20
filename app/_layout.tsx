@@ -12,7 +12,6 @@ import { StatusBar } from "expo-status-bar";
 SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
-  const colorScheme = useColorScheme();
   const [loaded] = useFonts({
     RalewayBlack: require("../assets/fonts/Raleway-Black.ttf"),
     RalewayBold: require("../assets/fonts/Raleway-Bold.ttf"),

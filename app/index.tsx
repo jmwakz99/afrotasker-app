@@ -1,7 +1,7 @@
 import { ImageBackground, Text, View } from "react-native";
 
 import Button from "@/components/Button";
-import { Href, Link, router } from "expo-router";
+import { Href, router } from "expo-router";
 
 const index = ({ navigation }: { navigation: any }) => {
   const handleGetStarted = (screen: Href<string | object>) => {
