@@ -6,6 +6,7 @@ import { useEffect } from "react";
 import "react-native-reanimated";
 
 import { StatusBar } from "expo-status-bar";
+import { SafeAreaView } from "react-native";
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
@@ -31,8 +32,24 @@ export default function RootLayout() {
   return (
     <ThemeProvider value={DefaultTheme}>
       <StatusBar style="light" />
+
       <Stack>
-        <Stack.Screen name="index" options={{ headerShown: false }} />
+        <Stack.Screen
+          name="index"
+          options={{ headerShown: false, headerTitle: "" }}
+        />
+        <Stack.Screen
+          name="signin"
+          options={{
+            headerShadowVisible: false,
+            headerTransparent: true,
+            headerTitle: "",
+            headerTintColor: "#FEC847",
+            contentStyle: {
+              backgroundColor: "#195ADC",
+            },
+          }}
+        />
         <Stack.Screen
           name="signup"
           options={{

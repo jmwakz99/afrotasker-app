@@ -9,6 +9,7 @@ export const secondaryColor = "#FEC847";
 export const blackColor = "#4d3";
 export const whiteColor = "#141414";
 export const greyColor = "#D7D7D7";
+export const dangerColor = "#ff0000";
 
 export const Colors = {
   light: {

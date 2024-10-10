@@ -8,6 +8,8 @@ const index = ({ navigation }: { navigation: any }) => {
     router.push(screen);
   };
 
+  console.log("entry", process.env.EXPO_PUBLIC_FIREBASE_PROJECT_ID);
+
   return (
     <View className="flex-1 gap-8">
       <View className="h-[50%] bg-brand">
@@ -17,11 +19,11 @@ const index = ({ navigation }: { navigation: any }) => {
           resizeMode="cover"
         />
       </View>
-      <View className="items-center ">
-        <Text className="text-[30px] text-center font-[RalewaySemiBold]">
+      <View className="items-center flex flex-col ">
+        <Text className="text-2xl  font-[RalewaySemiBold] text-center w-[80%]">
           Get Your Task Done with Just a Few Taps
         </Text>
-        <Text className="text-lg text-center font-[RalewayRegular] pt-4">
+        <Text className="text-lg text-center font-[RalewayRegular] pt-4 w-[80%]">
           Find the right person for the job, fast and hassle-free
         </Text>
       </View>
@@ -34,6 +36,7 @@ const index = ({ navigation }: { navigation: any }) => {
           label="I already have an account"
           variant="outline"
           additionalStyles="mt-3"
+          onPress={() => handleGetStarted("/signin")}
         />
       </View>
     </View>

@@ -13,6 +13,7 @@ module.exports = {
         black: "#141414",
         white: "#FFFFFF",
         grey: "#454545",
+        danger: "#FF0000",
       },
     },
   },

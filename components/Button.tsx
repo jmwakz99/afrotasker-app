@@ -32,7 +32,7 @@ const Button: FC<Props> = ({
         android_ripple={{ color: "grey", borderless: true }}
       >
         <Text
-          className={cn("text-center text-md font-[RalewaySemiBold] ", {
+          className={cn("text-center text-lg font-[RalewaySemiBold] ", {
             "text-black": variant === "solid",
             "text-brand": variant === "outline",
           })}
